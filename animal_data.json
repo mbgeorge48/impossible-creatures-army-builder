@@ -1,0 +1,181 @@
+[
+  {
+    "ant": {
+      "body": {
+        "head": true,
+        "front_legs": true,
+        "body": true,
+        "back_legs": true,
+        "tail": true,
+        "wings": false
+      },
+      "abilities": [{ "immunity": "body", "digging": "front_legs" }],
+      "movement_type": "ground",
+      "research_level": 1,
+      "attack": [
+        {
+          "leg_attack": {
+            "body_part": "front_legs",
+            "damage": 5,
+            "type": "melee"
+          },
+          "bite": {
+            "body_part": "head",
+            "damage": 5,
+            "type": "melee"
+          }
+        }
+      ],
+      "stats": {
+        "health": 30,
+        "defence": 39,
+        "air_speed": 0,
+        "ground_speed": 26,
+        "water_speed": 0,
+        "sight_radious": 20,
+        "size": 1
+      },
+      "base_cost": {
+        "coal": 78,
+        "electricity": 25
+      }
+    }
+  },
+  {
+    "archerfish": {
+      "body": {
+        "head": true,
+        "front_legs": false,
+        "body": true,
+        "back_legs": false,
+        "tail": true,
+        "wings": false
+      },
+      "abilities": [],
+      "movement_type": "swimmer",
+      "research_level": 2,
+      "attack": [
+        {
+          "water_artillery": {
+            "body_part": "head",
+            "damage": 3,
+            "type": "ranged"
+          },
+          "bite": {
+            "body_part": "head",
+            "damage": 2,
+            "type": "melee"
+          }
+        }
+      ],
+      "stats": {
+        "health": 18,
+        "defence": 6,
+        "air_speed": 0,
+        "ground_speed": 0,
+        "water_speed": 30,
+        "sight_radious": 30,
+        "size": 1
+      },
+      "base_cost": {
+        "coal": 66,
+        "electricity": 40
+      }
+    }
+  },
+  {
+    "armadillo": {
+      "body": {
+        "head": true,
+        "front_legs": true,
+        "body": true,
+        "back_legs": true,
+        "tail": true,
+        "wings": false
+      },
+      "abilities": [],
+      "movement_type": "ground",
+      "research_level": 3,
+      "attack": [
+        {
+          "bite": {
+            "body_part": "head",
+            "damage": 3,
+            "type": "melee"
+          }
+        }
+      ],
+      "stats": {
+        "health": 65,
+        "defence": 81,
+        "air_speed": 0,
+        "ground_speed": 18,
+        "water_speed": 0,
+        "sight_radious": 20,
+        "size": 2
+      },
+      "base_cost": {
+        "coal": 67,
+        "electricity": 0
+      }
+    }
+  },
+  { "baboon": {} },
+  { "bat": {} },
+  { "bull": {} },
+  { "camel": {} },
+  { "chameleon": {} },
+  { "cheetah": {} },
+  { "chimpanzee": {} },
+  { "coyote": {} },
+  { "crocodile": {} },
+  { "dolphin": {} },
+  { "dragonfly": {} },
+  { "eagle": {} },
+  { "electric eel": {} },
+  { "elephant": {} },
+  { "garfish": {} },
+  { "giraffe": {} },
+  { "gorilla": {} },
+  { "great white shark": {} },
+  { "grizzly bear": {} },
+  { "hammerhead shark": {} },
+  { "hippopotamus": {} },
+  { "hornet": {} },
+  { "horse": {} },
+  { "hyena": {} },
+  { "kangaroo": {} },
+  { "killer whale": {} },
+  { "komodo dragon": {} },
+  { "lemming": {} },
+  { "lioness": {} },
+  { "lobster": {} },
+  { "moose": {} },
+  { "mountain lion": {} },
+  { "musk ox": {} },
+  { "panther": {} },
+  { "piranha": {} },
+  { "poison frog": {} },
+  { "polar bear": {} },
+  { "porcupine": {} },
+  { "praying mantis": {} },
+  { "ram": {} },
+  { "rat": {} },
+  { "rattlesnake": {} },
+  { "raven": {} },
+  { "rhinoceros": {} },
+  { "scorpion": {} },
+  { "skunk": {} },
+  { "snapping turtle": {} },
+  { "snowy owl": {} },
+  { "sperm whale": {} },
+  { "spitting cobra": {} },
+  { "tiger": {} },
+  { "vulture": {} },
+  { "walrus": {} },
+  { "warthog": {} },
+  { "wolf": {} },
+  { "wolverine": {} },
+  { "wooly mammoth": {} },
+  { "zebra": {} }
+]

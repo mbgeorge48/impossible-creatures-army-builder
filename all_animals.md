@@ -1,0 +1,61 @@
+- ant
+- archerfish
+- armadillo
+- baboon
+- bat
+- bull
+- camel
+- chameleon
+- cheetah
+- chimpanzee
+- coyote
+- crocodile
+- dolphin
+- dragonfly
+- eagle
+- electric eel
+- elephant
+- garfish
+- giraffe
+- gorilla
+- great white shark
+- grizzly bear
+- hammerhead shark
+- hippopotamus
+- hornet
+- horse
+- hyena
+- kangaroo
+- killer whale
+- komodo dragon
+- lemming
+- lioness
+- lobster
+- moose
+- mountain lion
+- musk ox
+- panther
+- piranha
+- poison frog
+- polar bear
+- porcupine
+- praying mantis
+- ram
+- rat
+- rattlesnake
+- raven
+- rhinoceros
+- scorpion
+- skunk
+- snapping turtle
+- snowy owl
+- sperm whale
+- spitting cobra
+- tiger
+- vulture
+- walrus
+- warthog
+- wolf
+- wolverine
+- wooly mammoth
+- zebra
