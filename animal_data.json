@@ -1,181 +1,2589 @@
 [
-  {
-    "ant": {
-      "body": {
-        "head": true,
-        "front_legs": true,
-        "body": true,
-        "back_legs": true,
-        "tail": true,
-        "wings": false
-      },
-      "abilities": [{ "immunity": "body", "digging": "front_legs" }],
-      "movement_type": "ground",
-      "research_level": 1,
-      "attack": [
-        {
-          "leg_attack": {
-            "body_part": "front_legs",
-            "damage": 5,
-            "type": "melee"
-          },
-          "bite": {
-            "body_part": "head",
-            "damage": 5,
-            "type": "melee"
-          }
+    {
+        "name": "anaconda",
+        "body": {
+            "head": true,
+            "front_legs": false,
+            "torso": true,
+            "back_legs": false,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            { "name": "loner", "body_part": "tail" },
+            { "name": "high_endurannce", "body_part": "torso" }
+        ],
+        "movement_type": "amphibious",
+        "research_level": 4,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 11,
+                "type": "melee"
+            },
+            {
+                "name": "constriction",
+                "body_part": "torso",
+                "damage": 17,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 334,
+            "defence": 6,
+            "air_speed": 0,
+            "ground_speed": 15,
+            "water_speed": 18,
+            "sight_radious": 15,
+            "size": 8
+        },
+        "base_cost": {
+            "coal": 292,
+            "electricity": 325
         }
-      ],
-      "stats": {
-        "health": 30,
-        "defence": 39,
-        "air_speed": 0,
-        "ground_speed": 26,
-        "water_speed": 0,
-        "sight_radious": 20,
-        "size": 1
-      },
-      "base_cost": {
-        "coal": 78,
-        "electricity": 25
-      }
-    }
-  },
-  {
-    "archerfish": {
-      "body": {
-        "head": true,
-        "front_legs": false,
-        "body": true,
-        "back_legs": false,
-        "tail": true,
-        "wings": false
-      },
-      "abilities": [],
-      "movement_type": "swimmer",
-      "research_level": 2,
-      "attack": [
-        {
-          "water_artillery": {
-            "body_part": "head",
-            "damage": 3,
-            "type": "ranged"
-          },
-          "bite": {
-            "body_part": "head",
-            "damage": 2,
-            "type": "melee"
-          }
+    },
+    {
+        "name": "ant",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            { "name": "immunity", "body_part": "any" },
+            { "name": "digging", "body_part": "front_legs" }
+        ],
+        "movement_type": "ground",
+        "research_level": 1,
+        "attack": [
+            {
+                "name": "leg_attack",
+                "body_part": "front_legs",
+                "damage": 5,
+                "type": "melee"
+            },
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 30,
+            "defence": 39,
+            "air_speed": 0,
+            "ground_speed": 26,
+            "water_speed": 0,
+            "sight_radious": 20,
+            "size": 1
+        },
+        "base_cost": {
+            "coal": 78,
+            "electricity": 25
         }
-      ],
-      "stats": {
-        "health": 18,
-        "defence": 6,
-        "air_speed": 0,
-        "ground_speed": 0,
-        "water_speed": 30,
-        "sight_radious": 30,
-        "size": 1
-      },
-      "base_cost": {
-        "coal": 66,
-        "electricity": 40
-      }
-    }
-  },
-  {
-    "armadillo": {
-      "body": {
-        "head": true,
-        "front_legs": true,
-        "body": true,
-        "back_legs": true,
-        "tail": true,
-        "wings": false
-      },
-      "abilities": [],
-      "movement_type": "ground",
-      "research_level": 3,
-      "attack": [
-        {
-          "bite": {
-            "body_part": "head",
-            "damage": 3,
-            "type": "melee"
-          }
+    },
+    {
+        "name": "archerfish",
+        "body": {
+            "head": true,
+            "front_legs": false,
+            "torso": true,
+            "back_legs": false,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [],
+        "movement_type": "swimmer",
+        "research_level": 2,
+        "attack": [
+            {
+                "name": "water_artillery",
+                "body_part": "head",
+                "damage": 3,
+                "type": "ranged"
+            },
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 2,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 18,
+            "defence": 6,
+            "air_speed": 0,
+            "ground_speed": 0,
+            "water_speed": 30,
+            "sight_radious": 30,
+            "size": 1
+        },
+        "base_cost": {
+            "coal": 66,
+            "electricity": 40
         }
-      ],
-      "stats": {
-        "health": 65,
-        "defence": 81,
-        "air_speed": 0,
-        "ground_speed": 18,
-        "water_speed": 0,
-        "sight_radious": 20,
-        "size": 2
-      },
-      "base_cost": {
-        "coal": 67,
-        "electricity": 0
-      }
-    }
-  },
-  { "baboon": {} },
-  { "bat": {} },
-  { "bull": {} },
-  { "camel": {} },
-  { "chameleon": {} },
-  { "cheetah": {} },
-  { "chimpanzee": {} },
-  { "coyote": {} },
-  { "crocodile": {} },
-  { "dolphin": {} },
-  { "dragonfly": {} },
-  { "eagle": {} },
-  { "electric eel": {} },
-  { "elephant": {} },
-  { "garfish": {} },
-  { "giraffe": {} },
-  { "gorilla": {} },
-  { "great white shark": {} },
-  { "grizzly bear": {} },
-  { "hammerhead shark": {} },
-  { "hippopotamus": {} },
-  { "hornet": {} },
-  { "horse": {} },
-  { "hyena": {} },
-  { "kangaroo": {} },
-  { "killer whale": {} },
-  { "komodo dragon": {} },
-  { "lemming": {} },
-  { "lioness": {} },
-  { "lobster": {} },
-  { "moose": {} },
-  { "mountain lion": {} },
-  { "musk ox": {} },
-  { "panther": {} },
-  { "piranha": {} },
-  { "poison frog": {} },
-  { "polar bear": {} },
-  { "porcupine": {} },
-  { "praying mantis": {} },
-  { "ram": {} },
-  { "rat": {} },
-  { "rattlesnake": {} },
-  { "raven": {} },
-  { "rhinoceros": {} },
-  { "scorpion": {} },
-  { "skunk": {} },
-  { "snapping turtle": {} },
-  { "snowy owl": {} },
-  { "sperm whale": {} },
-  { "spitting cobra": {} },
-  { "tiger": {} },
-  { "vulture": {} },
-  { "walrus": {} },
-  { "warthog": {} },
-  { "wolf": {} },
-  { "wolverine": {} },
-  { "wooly mammoth": {} },
-  { "zebra": {} }
+    },
+    {
+        "name": "armadillo",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [],
+        "movement_type": "ground",
+        "research_level": 3,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 3,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 65,
+            "defence": 81,
+            "air_speed": 0,
+            "ground_speed": 18,
+            "water_speed": 0,
+            "sight_radious": 20,
+            "size": 2
+        },
+        "base_cost": {
+            "coal": 67,
+            "electricity": 0
+        }
+    },
+    {
+        "name": "baboon",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [{ "name": "pack_hunter", "body_part": "any" }],
+        "movement_type": "ground",
+        "research_level": 2,
+        "attack": [
+            {
+                "name": "pummel",
+                "body_part": "front_legs",
+                "damage": 3,
+                "type": "melee"
+            },
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 4,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 86,
+            "defence": 38,
+            "air_speed": 0,
+            "ground_speed": 27,
+            "water_speed": 0,
+            "sight_radious": 25,
+            "size": 2
+        },
+        "base_cost": {
+            "coal": 111,
+            "electricity": 45
+        }
+    },
+    {
+        "name": "bat",
+        "body": {
+            "head": true,
+            "front_legs": false,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": true
+        },
+        "abilities": [
+            {
+                "name": "sonar_pulse",
+                "body_part": "head"
+            },
+            {
+                "name": "defile_land",
+                "body_part": "tail"
+            }
+        ],
+        "movement_type": "flyer",
+        "research_level": 5,
+        "attack": {
+            "bite": {
+                "body_part": "head",
+                "damage": 2,
+                "type": "melee"
+            }
+        },
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "behemoth",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "hovering",
+                "body_part": "torso"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 22,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 500,
+            "defence": 79,
+            "air_speed": 0,
+            "ground_speed": 20,
+            "water_speed": 0,
+            "sight_radious": 40,
+            "size": 10
+        },
+        "base_cost": {
+            "coal": 461,
+            "electricity": 65
+        }
+    },
+    {
+        "name": "black_widow",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "loner",
+                "body_part": "tail"
+            },
+            {
+                "name": "web_throwing",
+                "body_part": "tail"
+            },
+            {
+                "name": "poison",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 4,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 20,
+            "defence": 18,
+            "air_speed": 0,
+            "ground_speed": 30,
+            "water_speed": 0,
+            "sight_radious": 25,
+            "size": 1
+        },
+        "base_cost": {
+            "coal": 121,
+            "electricity": 60
+        }
+    },
+    {
+        "name": "bombardier_beetle",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "hovering",
+                "body_part": "torso"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 2,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 1,
+                "type": "melee"
+            },
+            {
+                "name": "chemical_artillery",
+                "body_part": "tail",
+                "damage": 1,
+                "type": "ranged"
+            }
+        ],
+        "stats": {
+            "health": 36,
+            "defence": 22,
+            "air_speed": 0,
+            "ground_speed": 24,
+            "water_speed": 0,
+            "sight_radious": 40,
+            "size": 1
+        },
+        "base_cost": {
+            "coal": 67,
+            "electricity": 55
+        }
+    },
+    {
+        "name": "bull",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "charge_attack",
+                "body_part": "back_legs"
+            },
+            {
+                "name": "horns",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 3,
+        "attack": [
+            {
+                "name": "gore",
+                "body_part": "head",
+                "damage": 10,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 221,
+            "defence": 28,
+            "air_speed": 0,
+            "ground_speed": 25,
+            "water_speed": 0,
+            "sight_radious": 30,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 179,
+            "electricity": 70
+        }
+    },
+    {
+        "name": "camel",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "chameleon",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "cheetah",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "chimpanzee",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "coyote",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "crocodile",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "dolphin",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "dragonfly",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "eagle",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "electric_eel",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "elephant",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "garfish",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "giraffe",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "gorilla",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "great_white_shark",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "grizzly_bear",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "hammerhead_shark",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "hippopotamus",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "hornet",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "horse",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "hyena",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "kangaroo",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "killer_whale",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "komodo_dragon",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "lemming",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "lioness",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "lobster",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "moose",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "mountain_lion",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "musk_ox",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "panther",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "piranha",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "poison_frog",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "polar_bear",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "porcupine",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "praying_mantis",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "ram",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "rat",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "rattlesnake",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "raven",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "rhinoceros",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "scorpion",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "skunk",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "snapping_turtle",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "snowy_owl",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "sperm_whale",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "spitting_cobra",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "tiger",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "vulture",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "walrus",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "warthog",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "wolf",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "wolverine",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    {
+        "name": "wooly_mammoth",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "torso": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
+        }
+    },
+    { "zebra": {} }
 ]

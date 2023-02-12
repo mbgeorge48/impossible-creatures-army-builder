@@ -1,39 +1,42 @@
 [
-  {
-    "animal": {
-      "body": {
-        "head": true,
-        "front_legs": true,
-        "body": true,
-        "back_legs": true,
-        "tail": true,
-        "wings": false
-      },
-      "abilities": [{ "keen_sense": "head" }],
-      "movement_type": "ground",
-      "research_level": 5,
-      "attack": [
-        {
-          "bite": {
-            "body_part": "head",
-            "damage": 5,
-            "type": "melee"
-          }
+    {
+        "name": "animal",
+        "body": {
+            "head": true,
+            "front_legs": true,
+            "body": true,
+            "back_legs": true,
+            "tail": true,
+            "wings": false
+        },
+        "abilities": [
+            {
+                "name": "keen_sense",
+                "body_part": "head"
+            }
+        ],
+        "movement_type": "ground",
+        "research_level": 5,
+        "attack": [
+            {
+                "name": "bite",
+                "body_part": "head",
+                "damage": 5,
+                "type": "melee"
+            }
+        ],
+        "stats": {
+            "health": 50,
+            "defence": 50,
+            "air_speed": 25,
+            "ground_speed": 25,
+            "water_speed": 25,
+            "sight_radious": 20,
+            "size": 5
+        },
+        "base_cost": {
+            "coal": 83,
+            "electricity": 20
         }
-      ],
-      "stats": {
-        "health": 50,
-        "defence": 50,
-        "air_speed": 25,
-        "ground_speed": 25,
-        "water_speed": 25,
-        "sight_radious": 20,
-        "size": 5
-      },
-      "base_cost": {
-        "coal": 83,
-        "electricity": 20
-      }
     }
-  }
 ]
